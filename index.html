@@ -8,53 +8,64 @@
 </head>
 <body>
 
-  <h1> BMR Calculator </h1>
+
   <div class="wrap">
+    <h1> BMR Calculator </h1>
 
 
-  <p> You use energy no matter what you're doing, even when sleeping. The BMR Calculator will calculate your Basal Metabolic Rate (BMR); the number of calories you'd burn if you stayed in bed all day.
+    <p> You use energy no matter what you're doing, even when sleeping. The BMR Calculator will calculate your Basal Metabolic Rate (BMR); the number of calories you'd burn if you stayed in bed all day.
 
-If you've noticed that every year, it becomes harder to eat whatever you want and stay slim, you've also learnt that your BMR decreases as you age. Likewise, depriving yourself of food in hopes of losing weight also decreases your BMR, a foil to your intentions. However, a regular routine of cardiovascular exercise can increase your BMR, improving your health and fitness when your body's ability to burn energy gradually slows down.</p>
-  </div>
-  <div class="container">
-    <div class="details">
+      If you've noticed that every year, it becomes harder to eat whatever you want and stay slim, you've also learnt that your BMR decreases as you age. Likewise, depriving yourself of food in hopes of losing weight also decreases your BMR, a foil to your intentions. However, a regular routine of cardiovascular exercise can increase your BMR, improving your health and fitness when your body's ability to burn energy gradually slows down.</p>
+    </div>
 
+    <div class="container">
+      <div class="details">
+        <h3>Please Enter Your Details</h3>
 
-      <fieldset>
-        <label>Female:
-          <input id="female" type="radio" name="gender" onchange="calsPerDay()">
-        </label>
-        <label>Male:
-          <input id="male" type="radio" name="gender" onchange="calsPerDay()">
-        </label>
-      </fieldset>
+        <fieldset>
+          <label>
+            <input id="age" type="number" oninput="calsPerDay" placeholder="Age" class="age">
 
-      <fieldset>
-        <label>Age:
-          <input id="age" type="number" oninput="calsPerDay" value="50">
-          Years
-        </label>
-      </fieldset>
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <label>Height:
-          <input id="height" type="number" oninput="calsPerDay" value="70">
-          inches
-        </label>
-      </fieldset>
+        <fieldset>
+          <label>
+            <input id="height" type="number" oninput="calsPerDay" placeholder="Height (inches)" class="height">
 
-      <fieldset>
-        <label>Weight:
-          <input id="weight" type="number" oninput="calsPerDay" value="225">
-          lbs
-        </label>
-      </fieldset>
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <label onclick="calsPerDay">
-          Base metabolic rate: <span id="totalCals"></span> kcal per day
-        </label>
-      </fieldset>
+        <fieldset>
+          <label>
+            <input id="weight" type="number" oninput="calsPerDay"  placeholder="Weight (lbs)" class="weight">
+
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label id="genderSelect">Please select your gender</label>
+          <br>
+
+          <label>Female
+            <input id="female" type="radio" name="gender" onchange="calsPerDay()" class="radio">
+          </label>
+          <label> Male
+            <input id="male" type="radio" name="gender" onchange="calsPerDay()" class="radio">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label onclick="calsPerDay">
+            Your Base metabolic rate is:
+            <br>
+            <br>
+            <span id="totalCals"></span>  kcal per day
+            <br>
+          </label>
+        </fieldset>
+      </div>
+
     </div>
 
   </div>
