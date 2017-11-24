@@ -1,17 +1,22 @@
-label {
-  display: block;
-  box-shadow: 0.1em 0.1em 0.2em #888;
-  margin: 1em;
-  border-radius: 1ex;
-  padding: 1ex 1em;
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+  border: 2px solid black;
 }
-input[type=number] {
-  text-align: right;
-  border: none;
+
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
 }
-input {
-  float: right;
-}
-span {
-  font-weight: bold;
+
+#details {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
 }
