@@ -15,8 +15,35 @@ fieldset {
 	width: 100%;
 }
 
-#details {
+.details {
 	background:#F9F9F9;
 	padding:25px;
 	margin:50px 0;
+}
+
+
+body {
+  background-color: #E5E5DF;
+  font-family: sans-serif;
+  font-family:"Open Sans", Helvetica, Arial, sans-serif;
+  font-weight:300;
+  line-height:30px;
+  color:#777;
+
+}
+
+h1 {
+  font-size: 60px;
+
+}
+
+p {
+
+justify-content: center;
+
+}
+
+.wrap {
+  width: 900px;
+  text-align: center;
 }
