@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Basal metabolic rate</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Basal metabolic rate</title>
+  <link href="css/style.css"  type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
 
-  </body>
+  <h1> Find Out Your BMR </h1>
+
+  <label>Female:
+    <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+  </label>
+
+  <label>Male:
+    <input id="male" type="radio" name="gender" onchange="calsPerDay()">
+  </label>
+
+  <label>Age:
+    <input id="age" type="number" oninput="calsPerDay" value="50">
+    Years
+  </label>
+
+  <label>Height:
+    <input id="height" type="number" oninput="calsPerDay" value="70">
+    inches
+  </label>
+
+  <label>Weight:
+    <input id="weight" type="number" oninput="calsPerDay" value="225">
+    lbs
+  </label>
+
+  <label onclick="calsPerDay">
+    Base metabolic rate: <span id="totalCals"></span> kcal per day
+  </label>
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
